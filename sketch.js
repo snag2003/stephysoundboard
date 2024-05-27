@@ -153,7 +153,7 @@ function draw() {
 }
 
 class Button {
-  constructor(x, y, w, h, color, accent, song) {
+  constructor(x, y, w, h, color, accent, song, animationType) {
     this.x = x;
     this.y = y;
     this.w = w;
@@ -161,6 +161,7 @@ class Button {
     this.color = color;
     this.accent = accent;
     this.song = song;
+    this.animationType = animationType;
   }
   show() {
     noStroke();
@@ -175,9 +176,17 @@ class Button {
     arc(this.x, this.y + 49, this.w, this.h, TWO_PI, PI);
   }
   clicked(px, py) {
-    let d = dist(px, py, this.x, this.y);
-    if (d < this.w / 2 && this.song.isLoaded()) {
-      // if the distance is less than half of the width of the button and the sound is loaded
+    let horizontalThreshold = this.w * 0.5; // Adjust this value as needed for horizontal threshold
+    let verticalThreshold = this.h * 0.8; // Adjust this value as needed for vertical threshold
+
+    let horizontalDistance = abs(px - this.x);
+    let verticalDistance = abs(py - this.y);
+
+    if (
+      horizontalDistance < horizontalThreshold &&
+      verticalDistance < verticalThreshold &&
+      this.song.isLoaded()
+    ) {
       this.y = this.y + 10; // add 10 units to the y position of the button
       this.song.play(); // play the sound
     }
