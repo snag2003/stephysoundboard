@@ -15,20 +15,23 @@ let minecraft_damage;
 let oh_my_god;
 let samsung_notif;
 
+function preload() {
+  soundFormats("mp3");
+  alert = loadSound("../sounds/alert.mp3");
+  among_us = loadSound("../sounds/among_us.mp3");
+  bonk = loadSound("../sounds/bonk.mp3");
+  boom = loadSound("../sounds/boom.mp3");
+  cartoon_slip = loadSound("../sounds/cartoon_slip.mp3");
+  do_it = loadSound("../sounds/do_it.mp3");
+  minecraft_damage = loadSound("../sounds/minecraft_damage.mp3");
+  oh_my_god = loadSound("../sounds/oh_my_god.mp3");
+  samsung_notif = loadSound("../sounds/samsung_notif.mp3");
+}
+
 function setup() {
   canvas = createCanvas(weight, height);
 
-  //loading sounds
-  alert = loadSound("alert.mp3");
-  among_us = loadSound("among_us.mp3");
-  bonk = loadSound("bonk.mp3");
-  boom = loadSound("boom.mp3");
-  cartoon_slip = loadSound("cartoon_slip.mp3");
-  do_it = loadSound("do_it.mp3");
-  minecraft_damage = loadSound("minecraft_damage.mp3");
-  oh_my_god = loadSound("oh_my_god.mp3");
-  samsung_notif = loadSound("samsung_notif.mp3");
-
+  // Create buttons
   let b1 = new Button(
     weight / 3,
     height / 3,
@@ -187,8 +190,8 @@ class Button {
       verticalDistance < verticalThreshold &&
       this.song.isLoaded()
     ) {
-      this.y = this.y + 10; // add 10 units to the y position of the button
-      this.song.play(); // play the sound
+      this.y = this.y + 10;
+      this.song.play();
     }
   }
 }
