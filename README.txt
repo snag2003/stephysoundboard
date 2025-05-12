@@ -1,66 +1,73 @@
-# Welcome to p5.js
+# 🎵 Stephy's Soundboard 🎵
 
-You have downloaded the complete p5.js library ZIP file, yay!
+## 📋 Overview
 
-# Contents of the p5 folder
+This repository contains the codebase for **Stephy's Soundboard**, an interactive and playful soundboard built using HTML5 Canvas and JavaScript. Inspired by creative coding projects from [@codedex\_io](https://codedex.io) and [@exrlla](https://github.com/exrlla), this project allows users to click colorful buttons to play unique sounds.
 
-* p5.js file
-* p5.min.js file
-* addons folder
-  * p5.sound.js
-  * p5.sound.min.js
-* empty-example folder
-  * index.html
-  * p5.js
-  * p5.sound.js
-  * sketch.js
+**🎉 Live Demo:** [Stephy's Soundboard on GitHub Pages](https://snag2003.github.io/stephysoundboard/)
 
-## p5.js
+## ✨ Project Features
 
-This file stores the complete p5.js library. It is easy to read by humans, so feel free to open it and explore its contents. It also has a friendly error system, which helps new programmers with common user errors.
+* **🎨 Custom UI**: Colorful, 3D-style animated buttons rendered in a pastel theme
+* **🔊 Sound Interaction**: Click each button to play a different sound
+* **📱 Responsive Canvas**: Adapts to various screen sizes for desktop and mobile
+* **🌈 Whimsical Design**: A fun, uplifting user experience with a soft visual palette
 
-## p5.min.js
+## 🛠️ Technology Stack
 
-This file is a minified version of the p5.js file. It is a lighter version, with the same functionalities, but smaller file size. This minified version is harder to read for humans, and does not include the friendly error system.
+* **🖌️ Frontend**: HTML5, CSS3
+* **🧠 Logic & Sound**: Vanilla JavaScript + p5.js
+* **🚀 Deployment**: GitHub Pages
 
-## addons folder
+## 🚀 Getting Started
 
-The addons folder includes additional p5.js related libraries, in both original versions and minified versions.
+### 1. Clone the repository
 
-### p5.sound.js, p5.sound.min.js
+```bash
+git clone https://github.com/snag2003/stephysoundboard.git
+cd stephysoundboard
+```
 
-p5.sound extends p5.js with Web Audio functionality including audio input, playback, analysis, and synthesis.
+### 2. Open the project in your browser
 
-## empty-example folder
+You can directly open `index.html`, or use a local development server:
 
-This is an empty example of a website. The folder includes the file for the website, index.html, the p5.js library, other related p5.js libraries, and a template starting point for your p5.js sketch, called sketch.js.
+```bash
+npx serve
+# or use Live Server in VS Code
+```
 
-### index.html
+## 🚢 Deployment
 
-index.html is a template for an HTML file. This index.html first imports the libraries included in the folder (p5.js, p5.sound.js) then loads and executes the file sketch.js which is where you can write your own code.
+This project is deployed on **GitHub Pages**.
+Any push to the `main` branch will automatically update the live site:
 
-### sketch.js
+🔗 [https://snag2003.github.io/stephysoundboard/](https://snag2003.github.io/stephysoundboard/)
 
-The sketch.js is a template for the p5.js sketch, with the functions setup() and draw() that you can complete.
+## 🔊 Adding New Sounds
 
-## README.txt
+1. Add your `.mp3` or `.wav` files to the `assets/` folder
+2. In `script.js`, map the new audio files to additional button positions
 
-This README file formatted with Markdown :)
+## 🙌 Credits & Inspiration
 
-# What's next?
+* [@codedex\_io](https://codedex.io) – Creative coding lessons and challenges
+* [@exrlla](https://github.com/exrlla) – Visual inspiration for button design
 
-If you need more information to help get you started, please refer to our website:  
-https://p5js.org/get-started/ and https://p5js.org/learn/
+## 👩‍💻 Contributing
 
-An online reference to the p5.js library is available here:  
-https://p5js.org/reference/
+Contributions are welcome!
 
-In order to run your website (including the empty-example), you need to enable a local server, please see this tutorial in our wiki:  
-https://github.com/processing/p5.js/wiki/Local-server
+1. Fork this repository
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m "Add cool new feature"`
+4. Push to your branch: `git push origin feature/your-feature`
+5. Open a pull request
 
-p5.js is a community and p5.js is built by contributions. If you want to learn more about us, visit:  
-https://p5js.org/community/
+## 📝 License
 
-# License
+Maintained by **Stephany Acosta** © 2025.
 
-The p5.js library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, version 2.1.
+## 📬 Contact
+
+For questions, feedback, or collaborations, reach out via [stephanynag@gmail.com](mailto:stephanynag@gmail.com)
