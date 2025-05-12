@@ -17,15 +17,15 @@ let samsung_notif;
 
 function preload() {
   soundFormats("mp3");
-  alert = loadSound("../sounds/alert.mp3");
-  among_us = loadSound("../sounds/among_us.mp3");
-  bonk = loadSound("../sounds/bonk.mp3");
-  boom = loadSound("../sounds/boom.mp3");
-  cartoon_slip = loadSound("../sounds/cartoon_slip.mp3");
-  do_it = loadSound("../sounds/do_it.mp3");
-  minecraft_damage = loadSound("../sounds/minecraft_damage.mp3");
-  oh_my_god = loadSound("../sounds/oh_my_god.mp3");
-  samsung_notif = loadSound("../sounds/samsung_notif.mp3");
+  alert = loadSound("sounds/alert.mp3");
+  among_us = loadSound("sounds/among_us.mp3");
+  bonk = loadSound("sounds/bonk.mp3");
+  boom = loadSound("sounds/boom.mp3");
+  cartoon_slip = loadSound("sounds/cartoon_slip.mp3");
+  do_it = loadSound("sounds/do_it.mp3");
+  minecraft_damage = loadSound("sounds/minecraft_damage.mp3");
+  oh_my_god = loadSound("sounds/oh_my_god.mp3");
+  samsung_notif = loadSound("sounds/samsung_notif.mp3");
 }
 
 function setup() {
